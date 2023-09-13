@@ -1,0 +1,224 @@
+/* Others Style */
+@import url("https://fonts.googleapis.com/css2?family=Ephesis&family=Montserrat&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ephesis&family=Montserrat&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Oswald:wght@200;300;500;700&display=swap");
+/* Common CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+header {
+  min-height: 100vh;
+  width: 100%;
+  background-image: url("/images/godzilla.png");
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  background-position: top left;
+}
+.nav-text ul li .active::after {
+  content: "";
+  width: 50%;
+  height: 4px;
+  background: #0085ff;
+  display: block;
+  margin: ;
+  transition: 0.3s;
+}
+.nav-text ul li .active {
+  color: #0085ff;
+}
+.right-bar ul li .sign-up::after {
+  content: "";
+  width: 0%;
+  height: 4px;
+  background: #0085ff;
+  display: block;
+  margin: ;
+  transition: 0.3s;
+}
+.right-bar ul li .sign-up:hover::after {
+  width: 50%;
+}
+.right-bar ul li .sign-up:hover {
+  color: #0085ff;
+}
+
+/* Nav Style */
+.nav-text ul li .nav-hover::after {
+  content: "";
+  width: 0%;
+  height: 4px;
+  background: #0085ff;
+  display: block;
+  margin: ;
+  transition: 0.3s;
+}
+.nav-text ul li .nav-hover:hover::after {
+  width: 50%;
+}
+.nav-text ul li a:hover {
+  color: #0085ff;
+}
+/* Nav Style */
+.navigation-bar {
+  background: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo img {
+  width: 192px;
+  margin-top: 32px;
+  margin-left: 30px;
+}
+.nav-text ul {
+  display: flex;
+  margin-top: 32px;
+}
+.nav-text li {
+  list-style: none;
+  margin-left: 47px;
+}
+.nav-text li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 23px;
+}
+.right-bar ul {
+  display: flex;
+  margin-top: 32px;
+  margin-right: 30px;
+}
+.right-bar li {
+  list-style: none;
+  margin-left: 30px;
+}
+.right-bar li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 23px;
+}
+
+/* Navigation Bar End */
+
+/* Main Section Start */
+.main {
+  margin-left: 30px;
+}
+.title-h1 {
+  color: #fff;
+  font-family: Oswald;
+  font-size: 120px;
+  font-weight: 700;
+  margin-top: 70px;
+}
+.title-h2 {
+  color: #fff;
+  font-family: Oswald;
+  font-size: 54px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  text-transform: uppercase;
+}
+.title-h2 .bold-style {
+  font-weight: 500;
+}
+.main-desc {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 300;
+  width: 700px;
+  margin-top: 40px;
+}
+.ratings {
+  margin-top: 40px;
+  margin-bottom: 50px;
+}
+.ratings a {
+  color: #ffe600;
+  font-size: 20px;
+}
+.fa-regular {
+  color: #fff;
+}
+
+.watch-btn {
+  width: 200px;
+  height: 50px;
+  border-radius: 95px;
+  border: none;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  background: linear-gradient(93deg, #0085ff -24.61%, #7b12cd 105.37%);
+  transition: 0.2s;
+}
+.watch-btn:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+.trailer {
+  color: #0085ff;
+  font-size: 18px;
+  font-weight: 600;
+  margin-left: 50px;
+  transition: 0.2s;
+}
+.trailer:hover {
+  cursor: pointer;
+  font-size: 20px;
+}
+/* Next Movie Section */
+.next-movie-title {
+  margin-top: 55px;
+  margin-bottom: 15px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+}
+.single-movie img {
+  width: 240px;
+  height: 190px;
+}
+
+.single-movie {
+  display: inline-block;
+  background: #0085ff1a;
+  padding: 15px;
+  margin-bottom: 10px;
+  transition: 0.2s;
+}
+.single-movie:hover {
+  outline: 5px solid #0085ff;
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.copyright {
+  text-align: center;
+  color: #fff;
+}
+.copyright a {
+  color: #ffe600;
+  text-decoration: none;
+}
+.social-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+.social-links a {
+  color: #fff;
+  margin-right: 20px;
+  font-size: 25px;
+  transition: 0.3s;
+}
+.social-links a:hover {
+  color: #0085ff;
+}
